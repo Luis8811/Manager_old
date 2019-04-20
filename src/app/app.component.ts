@@ -7,6 +7,11 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {ClientsPage} from '../pages/clients/clients';
+import {FinancesPage} from '../pages/finances/finances';
+import {StaffPage} from '../pages/staff/staff';
+import {ProcessesPage} from '../pages/processes/processes';
+import {ProductsPage} from '../pages/products/products';
 
 
 @Component({
@@ -29,8 +34,13 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Control diario', component: HelloIonicPage },
+      { title: 'My First List', component: ListPage },
+      {title: 'Perspectiva del cliente', component: ClientsPage},
+      {title: 'Perspectiva financiera', component: FinancesPage},
+      {title: 'Perspectiva de procesos', component: ProcessesPage},
+      {title: 'Perspectiva del personal', component: StaffPage},
+      {title: 'Ofertas', component: ProductsPage}
     ];
   }
 
